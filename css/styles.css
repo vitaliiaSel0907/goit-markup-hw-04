@@ -234,7 +234,7 @@ body {
             color: #434455;     }
 
 
-                /* Секція */
+                /* Секція  3: Our Team */
                 .team {
                     background-color: #f4f4fd;
                     padding-top: 120px;
@@ -327,7 +327,6 @@ body {
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
-
 .team-icons .icon:hover,
 .team-icons .icon:focus {
     background-color: #404bbf;}
