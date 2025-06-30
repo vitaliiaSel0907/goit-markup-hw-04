@@ -343,7 +343,7 @@ body {
 
 
 
-/* Секція Portfolio */
+    /* Секція Portfolio */
 .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -402,24 +402,31 @@ body {
     color: #434455;
     margin: 0; }
 
-        /* Текстовий блок замість фото */
-                .portfolio-text-wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 100%;
-                    /* займає всю висоту li */
-                    padding: 16px;
-                    /* або як у макеті */
-                    box-sizing: border-box;
-                }
-        
-                .portfolio-text-item {
-                    height: 300px;
-                    /* фіксована висота, як у фото */
-                    background-color: #fff;
-                    }
-                    
+       
+    /* Текстовий блок замість фото */
+            
+.portfolio-text-content{
+    width: 360px;
+   height: 300px;
+   background-color:#4d5ae5;
+}
+.portfolio-text-payment{
+    font-family: var(--font-family);
+    font-weight: 400;
+      font-size: 16px;
+      /* line-height: 24px; */
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      color: var(--cloud);
+      color: #f4f4fd;
+    text-align: center;
+        padding: 16px;
+        height: 300px;
+        padding: 0 32px;
+        padding-top: 40px;
+}
+
+
 /* Footer Section */
 .footer {
     background-color: #2e2f42;
