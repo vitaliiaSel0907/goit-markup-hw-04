@@ -223,15 +223,15 @@ body {
             letter-spacing: 0.02em;
             color: #2e2f42;
             margin-bottom: 8px;
-            /* Виправлено з 12px */
+            
         }
-    
         /* Текст */
         .feature-text {
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: #434455;     }
+
 
 
                 /* Секція  3: Our Team */
@@ -307,29 +307,39 @@ body {
                     letter-spacing: 0.02em;
                     color: #434455; }                           
    
+/* Контейнер для іконок */
+.team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+    padding-left: 0;
+    list-style: none;
+    
+}
 
-
-    .team-icons {
-            margin-top: 16px;
-            margin-bottom: 32px;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-        }
-
-.team-icons .icon {
+.team-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
-    fill: #f4f4fd;
     background-color: #4d5ae5;
     border-radius: 50%;
-    padding: 8px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    /* щоб не було підкреслення посилань */
 }
-.team-icons .icon:hover,
-.team-icons .icon:focus {
-    background-color: #404bbf;}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+    background-color: #404bbf;
+}
+
+.team-icon {
+    fill: #f4f4fd;
+    width: 16px;
+    height: 16px; }
 
 
 
@@ -392,7 +402,24 @@ body {
     color: #434455;
     margin: 0; }
 
-
+        /* Текстовий блок замість фото */
+                .portfolio-text-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    /* займає всю висоту li */
+                    padding: 16px;
+                    /* або як у макеті */
+                    box-sizing: border-box;
+                }
+        
+                .portfolio-text-item {
+                    height: 300px;
+                    /* фіксована висота, як у фото */
+                    background-color: #fff;
+                    }
+                    
 /* Footer Section */
 .footer {
     background-color: #2e2f42;
@@ -425,4 +452,49 @@ footer .footer-logo {
     letter-spacing: 0.02em;
     margin-top: 16px;
     max-width: 264px; }
+
+/* Footer Social Media Section */
+.footer-social {
+    margin-top: 72px;
+}
+
+.footer-social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+/* Список соцмереж */
+.social-list {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*  іконки */
+.social-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #4d5ae5;
+}
+
+.social-icon {
+    fill: #f4f4fd; }
+
+       
     
