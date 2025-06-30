@@ -419,13 +419,14 @@ body {
       letter-spacing: 0.02em;
       color: var(--cloud);
       color: #f4f4fd;
-    text-align: center;
+    text-align: left;
         padding: 16px;
         height: 300px;
         padding: 0 32px;
         padding-top: 40px;
 }
 
+/* Footer Section */
 
 /* Footer Section */
 .footer {
@@ -445,7 +446,7 @@ footer .footer-logo {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
-    }
+}
 
 
 .footer-logo .studio-text {
@@ -458,20 +459,31 @@ footer .footer-logo {
     color: #f4f4fd;
     letter-spacing: 0.02em;
     margin-top: 16px;
-    max-width: 264px; }
+    max-width: 264px;
+}
 
 /* Footer Social Media Section */
 .footer-social {
-    margin-top: 72px;
+    width: 208px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-social-title {
     font-weight: 500;
     font-size: 16px;
+    fill: #FFFFFF;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 16px;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.footer-social {
+    width: 208px;
+    height: 80px;
+
+
 }
 
 /* Список соцмереж */
@@ -493,6 +505,8 @@ footer .footer-logo {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+
 }
 
 .social-link:hover,
@@ -501,7 +515,5 @@ footer .footer-logo {
 }
 
 .social-icon {
-    fill: #f4f4fd; }
-
-       
-    
+    fill: #f4f4fd;
+}
